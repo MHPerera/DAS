@@ -1,40 +1,96 @@
 body{
-    font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(56, 58, 59);
+    font-size: 16px;
     line-height: 1.6em;
-    background: #f4f4f4;
+
+    color: rgb(56, 58, 59);
     padding: 0;
     margin: 0;
+    background: #f1f1f4;
 }
 
 /*-------Global CSS-----*/
 .container{
     width: 80%; /*Responsive*/
     margin: auto;
+
+    overflow:hidden; 
+    /* specifies what should happen if content overflows an element's box.The overflow is clipped, and the rest of the content will be invisible*/
 }
 
 ul{
     padding: 0;
     margin: 0;
 }
+ /*-----------Buttons---------*/
+.button-lightseagreen#read-more{
+    color:rgb(56, 58, 59);
+    font-size: 16px;
+    margin-left:130px;
+    text-decoration: none;
+    padding:10px;
+}
 
-/*----header----*/
+.button-lightseagreen#read-more:hover{
+    background-color: lightseagreen;
+    color: #f1f1f4;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 0.2em;
+    border-width: 0;
+}
+
+.button-greyToLightseagreen{
+    font-size: 16px;
+    width:100px;
+    height:40px;
+    background: rgb(56, 58, 59);
+    color:#f1f1f4;
+    border-radius: 0.2em;
+    border-width: 0px;
+    margin-top: 10px;
+}
+
+.button-greyToLightseagreen:hover{
+    background-color: lightseagreen;
+    color: #f1f1f4;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 0.2em;
+    border-width: 0;
+}
+
+/*------header------*/
 header{
-    padding:30px;
-    margin:0;
-    min-height: 100px;
     background-color: rgb(56, 56, 59);
-    color: linen;
+    color: #f1f1f4;
+    padding-top:50px;
+    min-height: 100px;
+    margin:0;
+}
+
+header a{
+    color: #f1f1f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+header li{
+    display: inline;
+    padding:0 20px 0 20px;
+    float: left;
+    
 }
 
 /*---#branding-das--*/
 header #branding-das{
-    width:30%;
+    /*width:30%;*/
     float: left;
+    background-image: linear-gradient(to bottom , white))
 }
 
-header h1{
+header #branding-das h1{
     font-size: 40px;
     margin:0;
 }
@@ -43,25 +99,12 @@ header h3{
     font-size: 25px;
     color: lightseagreen;
 }
+
 /*--navigation bar--*/
 header nav{
+    float: right;
     margin-top:40px;
-    width:70%;
-    float: right;
-}
-
-header li{
-    display: inline;
-    padding:0 20px 0 20px;
-    float: right;
-    
-}
-
-header a{
-    text-decoration: none;
-    font-size: 20px;
-    color: linen;
-    text-transform: uppercase;
+    /*width:70%;*/
 }
 
 header a:hover{
@@ -70,39 +113,45 @@ header a:hover{
     font-weight: bold;
 }
 
-/*#ribbon*/
+/*----#ribbon-------*/
 #ribbon{
     background-color: lightseagreen;
-    height:40px;
+    height:30px;
 }
 
 /*---section #showcase---*/
 #showcase{
-    height:600px;
+    min-height:400px;
+    height:550px;
     background: url(../images/office.jpg) no-repeat 0-400px;
-}
-
-#showcase h3{
-    font-size: 40px;
-    margin:0;
-    padding-top:250px;
     text-align: center;
 }
 
-/*----#boxes----*/
-
-section .box{
-    width: 30%;
-    padding:15px;
-    margin-top:30px;
-    margin-bottom:30px;
-    float:right;
-    text-align: justify;
-    border-left: rgb(56, 58, 59) solid 0.5px;
-    border-right: rgb(56, 58, 59) solid 0.5px;
+#showcase h3{
+    padding-top:250px;
+    font-size: 40px;
+    margin:0;
 }
 
-section .box h2{
+/*----#boxes----*/
+#boxes{
+    margin-top:40px;
+    margin-bottom:40px;
+}
+
+#boxes .box{
+    float:left;
+    width: 30%;
+    padding:18px;
+    text-align: justify;
+}
+
+#middle-box{ 
+    border-left:rgb(56, 58, 59) solid 1px; 
+    border-right:rgb(56, 58, 59) solid 1px; 
+}
+
+.box h2{
     text-align: center;
 }
 
@@ -114,67 +163,51 @@ section .box h2{
     margin-right: auto;
 }
 
-a.button-1{
-    color:rgb(56, 58, 59);
-    font-size: 16px;
-    margin-left:130px;
-    text-decoration: none;
-    padding:10px;
-}
-
-a.button-1:hover{
-    background-color: lightseagreen;
-    color: #f4f4f4;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 0.2em;
-    border-width: 0;
-}
-
 /*------#contact-us------*/
-
-#contact-form label{
-    width: 100%;
-    height: 20px;
-    display: block;
+#contact-us{
+    width:auto;
+    border-top: lightseagreen solid 30px;
 }
 
-#contact-form input , #contact-form textarea {
-    width: 100%;
-    height: 40px;
-    text-align: center;
+#contact-us #contact-us-form{
+    padding:10px;
+    float: left;
+    width:45%;
+    margin:40px 10px 40px 20px;
+    border-right: rgb(56, 58, 59) solid 2px;
+}
+
+#contact-us #contact-details{
+    padding:10px;
+    float: right;
+    width:45%;
+    margin:80px 20px 40px 10px;
+}
+
+#contact-us-form label{
+    width: 20%;
+    float:left;
+    padding-top: 20px;
+}
+#contact-us-form input , #contact-us-form textarea {
+    width: 70%;
+    height: auto;
+    float: left;
+    border:lightseagreen solid 2px;
+    border-radius: 0.4em;
+    padding:10px;
+    margin-top:10px;
+    text-align: left;
     font-size: 18px;
     color: rgb(56, 58, 59);
-    border-radius: 0.6em;
     font-family: Arial, Helvetica, sans-serif;
-    padding-top:10px;
-    margin-top:10px;
 }
 
-button.button-2{
-    font-size: 16px;
-    width:100px;
-    height:40px;
-    background: rgb(56, 58, 59);
-    color:#f4f4f4;
-    border-radius: 0.2em;
-    border-width: 0px;
-    margin-top: 10px;
-}
-
-button.button-2:hover{
-    background-color: lightseagreen;
-    color: #f4f4f4;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 0.2em;
-    border-width: 0;
-}
 
 /*----fotter-----*/
 footer{
     background: rgb(56, 58, 59);
-    color:#f4f4f4;
+    color:#f1f1f4;
     margin-bottom: 0;
     height:100px;
     text-align: center;
