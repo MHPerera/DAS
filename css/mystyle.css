@@ -87,12 +87,12 @@ header li{
 header #branding-das{
     /*width:30%;*/
     float: left;
-    background-image: linear-gradient(to bottom , white))
 }
 
 header #branding-das h1{
     font-size: 40px;
     margin:0;
+    padding:10px;
 }
 
 header h3{
@@ -108,11 +108,19 @@ header nav{
 }
 
 header a:hover{
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     color:lightseagreen;
     font-weight: bold;
+    padding-top:10px;
+    padding-bottom:10px;
 }
 
+header .current{
+    color: lightseagreen;
+    font-size: 25px;
+    border-top: lightseagreen solid 2px;
+    border-bottom: lightseagreen solid 2px;
+}
 /*----#ribbon-------*/
 #ribbon{
     background-color: lightseagreen;
@@ -122,7 +130,7 @@ header a:hover{
 /*---section #showcase---*/
 #showcase{
     min-height:400px;
-    height:550px;
+    height:600px;
     background: url(../images/office.jpg) no-repeat 0-400px;
     text-align: center;
 }
