@@ -1,338 +1,587 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 1.6em;
-
-    color: rgb(56, 58, 59);
-    padding: 0;
-    margin: 0;
-    background: #f1f1f4;
-}
-
-/*-------Global CSS-----*/
-.container{
-    width: 80%; /*Responsive*/
-    margin: auto;
-    overflow:hidden; 
-    /* specifies what should happen if content overflows an element's box.The overflow is clipped, and the rest of the content will be invisible*/
-}
-
-ul{
-    padding: 0;
-    margin: 0;
-}
-
-@font-face {
-    font-family: satisfy-Regular;
-    src: url(./../font/Satisfy-Regular.ttf);
- }
-
- /*-----------Buttons---------*/
-.button-lightseagreen#read-more{
-    color:rgb(56, 58, 59);
-    font-size: 16px;
-    margin-left:130px;
-    text-decoration: none;
-    padding:10px;
-    border-radius: 0.2em;
-    transition: background-color 1.5s;
-}
-
-.button-lightseagreen#read-more:hover{
-    background-color: lightseagreen;
-    color: #f1f1f4;
-    font-size: 16px;
-    font-weight: bold;
-    border-width: 0;
-}
-
-.button-greyToLightseagreen{
-    font-size: 16px;
-    width:100px;
-    height:40px;
-    background: rgb(56, 58, 59);
-    color:#f1f1f4;
-    border-radius: 0.2em;
-    border-width: 0px;
-    margin-top: 10px;
-    transition: background-color 1.5s;
-}
-
-.button-greyToLightseagreen:hover{
-    background-color: lightseagreen;
-    color: #f1f1f4;
-    font-size: 16px;
-    border-radius: 0.2em;
-    border-width: 0;
-}
-
-/*------header------*/
-header{
-    background-color: rgb(56, 56, 59);
-    color: #f1f1f4;
-    padding-top:10px;
-    min-height: 100px;
-    margin:0;
-}
-
-header a{
-    color: #f1f1f4;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 20px;
-}
-
-header li{
-    display: inline;
-    padding:0 20px 0 20px;
-    float: left;
-    
-}
-
-/*---#branding--*/
-header #branding{
-    /*width:30%;*/
-    float: left;
-    padding-top : 30px ;
-}
-
-header #branding label{
-    font-size: 40px;
-    margin:0;
-    /* padding:10px; */
-}
-
-header h3{
-    font-size: 25px;
-    color: lightseagreen;
-    margin-bottom: 10px ;
-}
-
-/*--navigation bar--*/
-header nav{
-    float: right;
-    margin-top:40px;
-    /*width:70%;*/
-}
-header a{
-    transition: color 0.5s , padding-top 1s, padding-bottom 1s;
-}
-
-header a:hover{
-    color:lightseagreen;
-    padding-top:10px;
-    padding-bottom:10px;
-}
-
-header .current{
-    color: lightseagreen;
-    font-size: 25px;
-    border-top: lightseagreen solid 2px;
-    border-bottom: lightseagreen solid 2px;
-}
-
-/* -----#logo----- */
-#logo{
-    padding : 10px ; 
-    transition: padding 1s ;
-    border : 2px solid white;
-}
-
-#logo:hover{
-    padding : 15px ;
-}
-/*----#ribbon-------*/
-#ribbon{
-    background-color: lightseagreen;
-    height:30px;
-}
-
-/*---section #showcase---*/
-#showcase{
-    max-height:600px;
-    height:600px;
-    background: url(../images/office.jpg) no-repeat 0-400px;
-    text-align: center;
-}
-
-#showcase h3{
-    font-family: satisfy-Regular ;
-    padding-top:250px;
-    font-size: 50px;
-    margin:0;
-    transition : letter-spacing 1s ;
-}
-
-#showcase h3:hover{
-    letter-spacing : 3px ;
-}
-
-/*----#boxes----*/
-#boxes{
-    margin-top:40px;
-    margin-bottom:40px;
-}
-
-#boxes .box{
-    float: left;
-    width: 28% ;
-    padding: 18px ;
-    text-align: justify ;
-    border: 2px black solid ;
-    margin-right: 1.0% ;
-    margin-left: 1.0% ;
-    margin-top : 30px ;
-    transition : border 1.5s , margin-top 1.0s ;
-}
-
-#boxes .box:hover{
-    border : 2px lightseagreen solid ;
-    margin-top : 10px ;
-}
-
-#middle-box{ 
-    border-left:rgb(56, 58, 59) solid 1px; 
-    border-right:rgb(56, 58, 59) solid 1px; 
-}
-
-.box h2{
-    text-align: center;
-}
-
-.box img{
-    width:120px;
-    height:120px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.service-icon{
-    transition: scale 1.5s ;
-}
-
-.service-icon:hover{
-    scale : 1.15 ;
-}
-
-/*------#contact-us------*/
-#contact-us{
-    width:auto;
-    margin:auto;
-    border-top: lightseagreen solid 30px;
-}
-
-#contact-us #contact-us-form{
-    padding:10px;
-    float: left;
-    width:45%;
-    margin-top:40px;
-    margin-left:auto;
-    margin-right:auto;
-    border-right: rgb(56, 58, 59) solid 2px;
-}
-
-#contact-us #contact-details{
-    padding:10px;
-    float: right;
-    width:45%;
-    margin-top:80px;
-    margin-left:auto;
-    margin-right:auto;
-}
-
-#contact-us-form label{
-    width: 20%;
-    float:left;
-    padding-top: 20px;
-}
-#contact-us-form input , #contact-us-form textarea {
-    width: 70%;
-    height: auto;
-    float: left;
-    border:lightseagreen solid 2px;
-    border-radius: 0.4em;
-    padding:10px;
-    margin-top:10px;
-    text-align: left;
-    font-size: 18px;
-    color: rgb(56, 58, 59);
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
-/*----fotter-----*/
-footer{
-    background: rgb(56, 58, 59);
-    color:#f1f1f4;
-    margin-bottom: 0;
-    height:100px;
-    text-align: center;
-    padding-top:20px;
-    margin-top:50px;
-}
-
-
-
-
-/*Media queries*/
-@media( max-width: 1500px ){
-    header #branding,
-    header nav,
-    header nav li,
-    #boxes .box,
-    #contact-us #contact-us-form,
-    #contact-us #contact-details{
-        float:none;
-        width:100%;
-        text-align: center;
-    }
-    .container{
-        width: 85%; /*Responsive*/
-        margin: auto;
-    
-        overflow:hidden; 
-        /* specifies what should happen if content overflows an element's box.The overflow is clipped, and the rest of the content will be invisible*/
+    :root {
+        --white         :        #f1f1f4;
+        --sea-green     :        lightseagreen;
+        --grey          :        rgb(56, 58, 59);
     }
 
-    #showcase h3{
+    /*-------Global CSS-----*/
+
+    body{
+        
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
         line-height: 1.6em;
+        color: var(--grey);
+        padding: 0;
+        margin: 0;
+        background: var(--white) ;
+
     }
 
-    header nav{
-        padding-bottom:20px;
+    .container{
+
+        width: 80%; /*Responsive*/
+        margin: auto;
+        overflow:hidden; 
+        
     }
 
-    header li{
-        padding:0 5px 0 5px;
-        border-left: linen solid 1px;
+    ul{
+
+        padding: 0;
+        margin: 0;
+
+    }
+
+    
+
+    @font-face {
+
+        font-family: satisfy-Regular;
+        src: url(./../font/Satisfy-Regular.ttf);
+
+    }
+
+    /*-----------Buttons---------*/
+
+    .btn {
+        font-size: 16px;
+        text-decoration: none;
+        padding:10px;
+        border-radius: 0.2em !important;
+        transition: background-color 1.5s;
+        display: block;
+        text-align: center;
+        border-width: 0;
+    }
+
+    .button-lightseagreen#read-more{
+
+        background-color : var(--grey) ;
+        color : var(--white) ;
+        margin : auto ;
+        width : 30% ;
+        
+    }
+
+    .button-lightseagreen#read-more:hover{
+
+        background-color:  var(--sea-green);
+        color: var(--white);
+        border-width: 0;
+
+    }
+
+    .button-greyToLightseagreen{
+        
+        width:100px;
+        background:var(--grey);
+        color:var(--white);
+        margin: auto ;
+        margin-left: auto ;
+        margin-right: auto ;
+        
+
+    }
+
+    .button-greyToLightseagreen:hover{
+
+        background-color:  var(--sea-green);
+        color: var(--white);
+        
+    }
+
+    /*------header------*/
+
+    header{
+
+        background-color: var(--grey);
+        color: var(--white);
+        padding-top:10px;
+        min-height: 40px;
+        margin:0;
+
     }
 
     header a{
-        font-size: 18px;
+
+        color: var(--white);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 20px;
+
+    }
+
+    header li{
+
+        display: inline;
+        padding:0 20px 0 20px;
+        float: left;
+        
+    }
+
+    /*---#branding--*/
+
+    header #branding{
+
+        float: left;
+        padding-top : 30px ;
+
+    }
+
+    header #branding label{
+
+        font-size: 40px;
+        margin:0;
+
+    }
+
+    header h3{
+
+        font-size: 25px;
+        color:  var(--sea-green);
+        margin-bottom: 10px ;
+
+    }
+
+    /*--navigation bar--*/
+
+    header nav{
+
+        float: right;
+        margin-top:40px;
+
+    }
+
+    header a{
+
+        transition: color 0.5s , padding-top 1s, padding-bottom 1s;
+
     }
 
     header a:hover{
-        letter-spacing: normal;
+
+        color: var(--sea-green);
+        padding-top:10px;
+        padding-bottom:10px;
+
     }
 
     header .current{
-        font-size: 20px;
+
+        color:  var(--sea-green);
+        font-size: 25px;
+        border-top:  var(--sea-green) solid 2px;
+        border-bottom:  var(--sea-green) solid 2px;
+
     }
 
-    #middle-box{
-        border:none;
+    #menuToggle {
+
+        display: none;
+
     }
 
-    #contact-us-form label,
-    #contact-us-form input , 
-    #contact-us-form textarea {
-        width:85%;
-        margin: auto ;
+    .menu-icon {
+
+        display: none;
+
+    }
+
+    /* -----#logo----- */
+
+    #logo{
+
+        padding : 10px ; 
+        transition: padding 1s ;
+        border : 2px solid var(--white);
+
+    }
+
+    #logo:hover{
+
+        padding : 15px ;
+
+    }
+
+    /*----#ribbon-------*/
+
+    #ribbon{
+
+        background-color:  var(--sea-green);
+        height:30px;
+
+    }
+
+    /*---section #showcase---*/
+
+    #showcase{
+
+        max-height:600px;
+        height:600px;
+        background: url(../images/office.jpg) no-repeat 0-400px;
         text-align: center;
+
     }
-    
-    .button-lightseagreen#read-more{
+
+    #showcase h3{
+
+        font-family: satisfy-Regular ;
+        padding-top:250px;
+        font-size: 50px;
+        margin:0;
+        transition : letter-spacing 1s ;
+
+    }
+
+    #showcase h3:hover{
+
+        letter-spacing : 3px ;
+
+    }
+
+    /*----#boxes----*/
+
+    #boxes{
+        
+        margin-top:40px;
+        margin-bottom:40px;
+        width : auto ;
+
+    }
+
+    #boxes .box{
+
+        float: left;
+        width: 28%;
+        padding: 2% 1% 2% 1%;
+        text-align: justify;
+        border: 2px var(--grey) solid;
+        margin-right: 1%;
+        margin-left: 1%;
+        margin-top: 30px;
+        transition: border 1.5s , margin-top 1.0s;
+
+    }
+
+    #boxes .box:hover{
+
+        border : 2px  var(--sea-green) solid ;
+        margin-top : 10px ;
+
+    }
+
+    #middle-box{ 
+
+        border-left: var(--grey) solid 1px; 
+        border-right: var(--grey) solid 1px; 
+
+    }
+
+    .box h2{
+
+        text-align: center;
+
+    }
+
+    .box img{
+
+        width: 35%;
+        height: 35%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .service-icon{
+
+        transition: scale 1.5s ;
+
+    }
+
+    .service-icon:hover{
+
+        scale : 1.15 ;
+
+    }
+
+    /*------#contact-us------*/
+
+    #contact-us{
+
+        width:auto;
         margin:auto;
+        border-top:  var(--sea-green) solid 30px;
+
     }
-}
+
+    #contact-us #contact-us-form{
+
+        padding:10px;
+        float: left;
+        width:45%;
+        margin-top:40px;
+        margin-left:auto;
+        margin-right:auto;
+        border-right: var(--grey) solid 2px;
+
+    }
+
+    #contact-us #contact-details{
+
+        padding:10px;
+        float: right;
+        width:45%;
+        margin-top:80px;
+        margin-left:auto;
+        margin-right:auto;
+
+    }
+
+    #contact-us-form label{
+
+        width: 20%;
+        float:left;
+        padding-top: 20px;
+
+    }
+
+    #contact-us-form input , #contact-us-form textarea {
+
+        width: 70%;
+        height: auto;
+        float: left;
+        border: var(--sea-green) solid 2px;
+        border-radius: 0.4em;
+        padding:10px;
+        margin-top:10px;
+        text-align: left;
+        font-size: 18px;
+        color:var(--grey);
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+
+    /*----fotter-----*/
+
+    footer{
+
+        background: var(--grey);
+        color: var(--white);
+        margin-bottom: 0;
+        height:50px;
+        text-align: center;
+        padding-top:10px;
+        margin-top:50px;
+
+    }
+
+
+
+
+    /*Media queries*/
+
+    @media( max-width: 1000px){
+
+        header #branding,
+        header nav,
+        header nav li,
+        #contact-us #contact-us-form,
+        #contact-us #contact-details    {
+
+            float:none;
+            width:100%;
+            text-align: center;
+            border : none ;
+
+        }
+
+        #boxes .box {
+
+            float : none ;
+            width : 94% ;
+            text-align : center ;
+            margin-left : 0px;
+            margin-right : 0px;
+
+        }
+
+        .container{
+
+            width: 90%; /*Responsive*/
+            margin: auto;
+            overflow:hidden; 
+            /* specifies what should happen if content overflows an element's box.The overflow is clipped, and the rest of the content will be invisible*/
+        
+        }
+
+        #showcase h3{
+
+            line-height: 1.6em;
+
+        }
+
+        header nav{
+
+            padding-bottom:20px;
+
+        }
+
+        header li{
+
+            padding:0 5px 0 5px;
+            border-left: var(--white) solid 1px;
+
+        }
+
+        header a{
+
+            font-size: 18px;
+
+        }
+
+        header a:hover{
+
+            letter-spacing: normal;
+
+        }
+
+        header .current{
+
+            font-size: 20px;
+
+        }
+
+        #contact-us-form label,
+        #contact-us-form input , 
+        #contact-us-form textarea  {
+
+            width: 90% ;
+            margin: auto ;
+            text-align: center ;
+
+        }
+
+        #contact-us-form form {
+
+            width: 100% ;
+
+        }
+        
+        #contact-us-form label{
+
+            padding : 10px ;
+
+        }
+        
+        .button-lightseagreen#read-more{
+
+            margin:auto;
+
+        }
+
+        #contact-us #contact-details{
+
+            margin-top : 20px ;
+
+        }
+
+    }
+
+
+
+
+
+
+    /*Início das configurações da Navigation com dispositivos < 768px*/
+    @media screen and (max-width: 768px) {
+        
+        header #branding label , header #branding h3 {
+
+            font-size: 20px;
+            
+        }
+
+        .menu {
+
+            width: 100%;
+            height: auto;
+
+        }
+
+        .menu ul {
+
+            display: block;
+            max-height: 0;
+            overflow: hidden;
+            -webkit-transition: max-height 0.3s;
+            -moz-transition: max-height 0.3s;
+            -ms-transition: max-height 0.3s;
+            -o-transition: max-height 0.3s;
+            transition: max-height 0.5s ;
+            /*Para fazer com que o menu saia da esquerda, você deve trocar max-height por max-width*/
+            /*Para fazer com que o menu saia da direita, você deve trocar max-height por max-width e setar float: right*/
+        
+        }
+
+        .menu ul li a {
+
+            text-align: left;
+            width: 100%;
+
+        }
+        .menu-icon {
+
+            width: 100px;
+            height: 50px;
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            line-height: 60px;
+
+        }
+
+        #menuToggle:checked ~ ul {
+
+            max-height: 350px ;
+            /*Para fazer com que o menu saia da esquerda ou direita, você deve trocar max-height por max-width*/
+        
+        }
+
+        .menu-icon i {
+
+            font-size: 1.5em ;
+
+        }
+
+        header nav {
+
+            margin-top: 20px ;
+
+        }
+
+        #ribbon {
+
+            height:10px ;
+
+        }
+
+        #contact-us {
+            
+            border-top:  var(--sea-green) solid 10px ;
+
+        }
+
+        #contact-us #contact-us-form {
+
+            padding : 0 ;
+
+        }
+
+    }
+
+
+
